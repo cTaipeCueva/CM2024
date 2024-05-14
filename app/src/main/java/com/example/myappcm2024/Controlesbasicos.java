@@ -1,6 +1,8 @@
 package com.example.myappcm2024;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,7 +20,12 @@ public class Controlesbasicos extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;  
+            return insets;
         });
+    }
+    public void Regresar(View view){
+        Intent i= new Intent(this, MainActivity.class);
+        startActivity(i);
+        finish();
     }
 }

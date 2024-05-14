@@ -25,6 +25,7 @@
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="basicos"
             android:text="Controles Basicos" />
 
         <Button
@@ -38,6 +39,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="controles avanzados" />
+
+        <TextView
+            android:id="@+id/etname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NAME" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
